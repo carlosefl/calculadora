@@ -7,7 +7,13 @@ cor3 = "#000000" #preto
 cor4 = "#ECEFF1" #cinza
 cor5 = "#FFAB40" #laranja
 
+#caminho da imagem da janela
+x5 = 'R.ico'
+
+#janela e frames 
+
 janela = Tk()
+janela.iconbitmap(x5)
 janela.title("calculadora")
 janela.geometry("240x263+300+140")
 janela.config(bg=cor1)
@@ -57,7 +63,7 @@ b1.place(x=0, y=0)
 b2 = Button(frame_corpo, text="%", width=7, height=2, bg= cor4, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("%"))
 b2.place(x=123,y=0)
 
-b3 = Button(frame_corpo, text="/", width=7, height=2, bg=cor5, fg= cor1, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("/"))
+b3 = Button(frame_corpo, text="/", width=7, height=2, bg=cor5, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("/"))
 b3.place(x=185,y=0 )
 
 b4 = Button(frame_corpo, text="7", width=7,height=2, bg= cor4, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("7"))
@@ -69,7 +75,7 @@ b5.place(x=60,y=44)
 b6 = Button(frame_corpo,text="9", width=7, height=2, bg= cor4, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("9"))
 b6.place(x=123,y=44)
 
-b7 = Button(frame_corpo,text="*", width=7, height=2, bg=cor5, fg= cor1, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("*"))
+b7 = Button(frame_corpo,text="*", width=7, height=2, bg=cor5,  font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("*"))
 b7.place(x=185,y=44)
 
 b8 = Button(frame_corpo,text="4", width=7, height=2, bg= cor4, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("4"))
@@ -81,7 +87,7 @@ b9.place(x=60,y=88)
 b10 = Button(frame_corpo,text="6", width=7, height=2, bg= cor4, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("6"))
 b10.place(x=123,y=88)
 
-b11 = Button(frame_corpo,text="-", width=7, height=2, bg=cor5, fg= cor1, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("-"))
+b11 = Button(frame_corpo,text="-", width=7, height=2, bg=cor5, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("-"))
 b11.place(x=185,y=88)
 #
 b12 = Button(frame_corpo,text="1", width=7, height=2, bg= cor4, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("1"))
@@ -93,7 +99,7 @@ b13.place(x=60,y=132)
 b14 = Button(frame_corpo,text="3", width=7, height=2, bg= cor4, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("3"))
 b14.place(x=123,y=132)
 
-b15 = Button(frame_corpo,text="+", width=7, height=2, bg=cor5, fg= cor1, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("+"))
+b15 = Button(frame_corpo,text="+", width=7, height=2, bg=cor5, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("+"))
 b15.place(x=185,y=132)
 
 b16 = Button(frame_corpo,text="0", width=16, height=2, bg=cor4,  font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor("0"))
@@ -102,7 +108,7 @@ b16.place(x=0,y=176)
 b17 = Button(frame_corpo,text=",", width=7, height=2, bg= cor4, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: mostrar_valor(","))
 b17.place(x=123,y=176)
 
-b18 = Button(frame_corpo,text="=", width=7, height=2, bg=cor5, fg= cor1, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: calcular())
+b18 = Button(frame_corpo,text="=", width=7, height=2, bg=cor5, font=('Ivy 8 bold'), relief='raised',overrelief=RIDGE, command= lambda: calcular())
 b18.place(x=185,y=176)
 
 
